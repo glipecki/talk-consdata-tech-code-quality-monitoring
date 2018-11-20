@@ -1,26 +1,143 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Monitorowanie jakości kodu - SonarQube Companion</title>
-		<link rel="stylesheet" href="slides.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Slide 1</h1>
-				</section>
-				<section>
-					<h1>Slide 2</h1>
-				</section>
-			</div>
-		</div>
-		<script src="slides.js"></script>
-		<script>
-			Reveal.initialize({
-			});
-		</script>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Monitorowanie jakości kodu - SonarQube Companion</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/blood.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>SonarQube Companion</h1>
+            <h2>(Zespołowe) monitorowanie jakości kodu</h2>
+            <h4>Grzegorz Lipecki, Tech Lead @ Consdata</h4>
+        </section>
+        <section>
+            <h1>Jakość kodu?</h1>
+            <div class="fragment">
+                <h2>Statyczna analiza kodu</h2>
+            </div>
+            <div class="fragment">
+                <h2>SonarQube</h2>
+                <small class="fragment">
+                    <em>
+                        <a href="https://www.consdata.com/pl/blog/sonarqube-wprowadzenie-do-statycznej-analizy-kodu">
+                            Wprwoadzenie do statycznej analizy kodu @ Consdata/Blog
+                        </a>
+                    </em>
+                </small>
+            </div>
+        </section>
+        <section data-background="img/sq-monolith-summary.png" data-background-size="contain">
+        </section>
+        <section>
+            <h1>W czym problem?</h1>
+            <div class="fragment">
+                <h2>Microservices</h2>
+            </div>
+        </section>
+        <section>
+            <h2>Jak było?</h2>
+            <img src="img/sq-team-list-monolith.png"/>
+        </section>
+        <section>
+            <h2>Jak jest?</h2>
+            <img src="img/sq-team-list-microservices.png"/>
+        </section>
+        <section>
+            <h2>Gdzie jesteśmy?</h2>
+            <ul>
+                <li class="fragment">ogólna kondycja całego projektu?</li>
+                <li class="fragment">czy dzieje się coś złego?</li>
+                <li class="fragment">moduł się degraduje?</li>
+                <li class="fragment">zespół ma problemy?</li>
+            </ul>
+        </section>
+        <section>
+            <h2>SonarQube Companion</h2>
+            <ul>
+                <li class="fragment">aplikacja towarzysząca do SonarQube</li>
+                <li class="fragment">statystyki z perspektywy zespołów</li>
+                <li class="fragment">szybkie podsumowanie stanu projektu/organziacji</li>
+                <li class="fragment">open source</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Przegląd organizacji</h2>
+            <img src="img/sqc-company-tree.png" />
+        </section>
+        <section>
+            <h2>Przegląd zespołu</h2>
+        </section>
+        <section data-background="img/sqc-team.png" data-background-size="contain">
+        </section>
+        <section>
+            <h2>Podsumowanie zespołu</h2>
+            <img src="img/sqc-team-summary.png" />
+        </section>
+        <section>
+            <h2>Naruszenia zespołu</h2>
+            <img src="img/sqc-team-violations.png" />
+        </section>
+        <section>
+            <h2>Projekty zespołu</h2>
+            <img src="img/sqc-team-projects.png" />
+        </section>
+        <section>
+            <h2>Powiadomienia</h2>
+            <img src="img/slack-notification.png" />
+        </section>
+        <section>
+            <h1>Co zyskaliśmy?</h1>
+            <ul>
+                <li class="fragment">podniesienie morale, nutka rywalizacji i grywalizacji ;)</li>
+                <li class="fragment">uporządkowanie szumu informacyjnego z wielu projektów</li>
+                <li class="fragment">przegąd na retrospektywach</li>
+                <li class="fragment">regularne porządki zamiast okresowych akcji</li>
+                <li class="fragment">podniesienie świadomości i zrozumienia naruszeń</li>
+                <li class="fragment">bonusik: zaangażowanie w projekt poza sprzedażowy, pokazanie że się da, zachęcenie innych 😉</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Co dalej?</h1>
+            <ul>
+                <li>Ranking naruszeń użytkowników</li>
+                <li>Grupy bazujące na użytkownikach</li>
+                <li>Propozycje?</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Q&A?</h1>
+        </section>
+        <section>
+            <h1>Więcej informacji</h1>
+            <p><a href="https://github.com/Consdata/sonarqube-companion">SonarQube Companion @ GitHub</a></p>
+            <p><a href="https://www.consdata.com/pl/blog/monitorowanie-zespolowych-trendow-jakosci-kodu">SonarQube
+                Companion @ Consdata/Blog</a></p>
+            <p><a href="https://www.consdata.com/pl/blog/praktyczne-zastosowanie-webhook">Webhooks w SonarQube Companion @ Consdata/Blog</a></p>
+        </section>
+        <section>
+            <h1>Dzięki! 😉</h1>
+        </section>
+    </div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+    Reveal.initialize({
+        width: 1660,
+        slideNumber: 'c/t',
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
